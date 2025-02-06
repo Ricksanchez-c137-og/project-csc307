@@ -53,7 +53,7 @@ function Counter() {
         const email = document.getElementById("email").value.trim();
 
         if (name === "" || email === "") {
-            alert("⚠️ Please enter your name and email before submitting the quiz.");
+            alert(" Please enter your name and email before submitting the quiz.");
             return;
         }
 
