@@ -57,17 +57,23 @@ function Counter() {
 
     const companies = document.querySelectorAll(".companies-list li");
 
-    companies.forEach(company => {
-        company.style.cursor = "pointer";
+companies.forEach(company => {
+  company.style.cursor = "pointer";
+  company.style.transform = "scale(0.95)"; 
 
-        company.addEventListener("mouseenter", () => company.style.transform = "scale(1.05)");
-        company.addEventListener("mouseleave", () => company.style.transform = "scale(1)");
-        
-        company.addEventListener("click", () => {
-            const url = company.getAttribute("data-url");
-            if (url) window.open(url, "_blank");
-        });
-    });
+  company.addEventListener("mouseenter", () => {
+    company.style.transform = "scale(1)"; 
+  });
+  
+  company.addEventListener("mouseleave", () => {
+    company.style.transform = "scale(0.95)";
+  });
+  
+  company.addEventListener("click", () => {
+    const url = company.getAttribute("data-url");
+    if (url) window.open(url, "_blank");
+  });
+});
 
     const button = document.querySelector("button");
     button?.addEventListener("mouseover", () => button.style.transform = "scale(1.05)");

@@ -71,8 +71,8 @@ tbody tr:hover {
 
 #react {
     animation: rotate 5s linear infinite;
-    height: auto;
-    width: auto;
+    height: 350px;
+    width: 350px;
 }
 
 @keyframes rotate {

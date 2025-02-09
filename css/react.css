@@ -14,7 +14,34 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+  }
+  
+  #react-header .mirror-swipe {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  #react-header .mirror-swipe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.8) 50%, transparent 100%);
+    transform: skewX(-20deg);
+    animation: swipe 2s infinite;
+  }
+  
+  @keyframes swipe {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
 
 p {
     font-size: 1.3rem;
