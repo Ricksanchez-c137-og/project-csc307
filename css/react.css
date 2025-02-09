@@ -84,7 +84,7 @@ pre {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Header */
+
 h3 {
     text-align: center;
     font-size: 1.8rem;
@@ -141,7 +141,6 @@ button:hover {
     background: #008c42;
 }
 
-* Container Styling */
 div {
     width: 60%;
     margin: 50px auto;
@@ -154,7 +153,6 @@ div {
     text-align: center;
 }
 
-/* Heading Styling */
 h3 {
     font-size: 2rem;
     margin-bottom: 20px;
