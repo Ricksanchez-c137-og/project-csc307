@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 📌 Add Styling to the TypeScript Header
     const tsHeader = document.getElementById('typescript-header');
     tsHeader.classList.add('typescript-header');
 
-    // 📌 TypeScript Code Example with Loops
     const tsCode = `
 function addNumbers(a: number, b: number): number {
     return a + b;
@@ -32,7 +30,6 @@ do {
 } while (y <= 3);
 `;
 
-    // 📌 JavaScript Code Example with Loops
     const jsCode = `
 function addNumbers(a, b) {
     return a + b;
@@ -61,23 +58,21 @@ do {
 } while (y <= 3);
 `;
 
-    // 📌 Inject Code into Page
     const tsCodeBlock = document.getElementById('typescript-code');
     const jsCodeBlock = document.getElementById('javascript-code');
 
     if (tsCodeBlock) {
         tsCodeBlock.textContent = tsCode;
     } else {
-        console.error("❌ Element with ID 'typescript-code' not found.");
+        console.error(" Element with ID 'typescript-code' not found.");
     }
 
     if (jsCodeBlock) {
         jsCodeBlock.textContent = jsCode;
     } else {
-        console.error("❌ Element with ID 'javascript-code' not found.");
+        console.error("Element with ID 'javascript-code' not found.");
     }
 
-    // 📌 Animation Effect for Elements
     const elements = document.querySelectorAll("p, ol, .code-container");
 
     elements.forEach((element, index) => {
@@ -88,10 +83,8 @@ do {
         setTimeout(() => {
             element.style.opacity = "1";
             element.style.transform = "translateY(0)";
-        }, 200 * index); // Staggered Animation Effect
-    });
+        }, 200 * index); 
 
-    // 📌 Additional Loop-Based Animation for Fun
     let count = 0;
     const animatedElements = document.querySelectorAll(".code-container");
     
@@ -105,16 +98,4 @@ do {
             animatedElements[i].style.transform = "scale(1)";
         }, 1200 + i * 300);
     }
-
-    let iteration = 0;
-    while (iteration < 3) {
-        console.log(`Animating the page: Round ${iteration + 1}`);
-        iteration++;
-    }
-
-    let repeat = 0;
-    do {
-        console.log(`Final animation iteration: ${repeat + 1}`);
-        repeat++;
-    } while (repeat < 2);
-});
+})});
