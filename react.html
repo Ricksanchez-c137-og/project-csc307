@@ -1,170 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React Mini-Course</title>
-    <link rel="stylesheet" href="css/react.css">
-    <script defer src="scripts/react.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Mini-Course</title>
+  <link rel="stylesheet" href="css/react.css" />
+  <script defer src="scripts/react.js"></script>
 </head>
 <body>
-    <main>
-        <div id="react-header">
-            <h1>What is <span class="mirror-swipe">React</span>?</h1>
+  <!-- Header with mirror-swipe effect on React word (controlled via CSS) -->
+  <header id="react-header">
+    <h1>What is <span class="mirror-swipe">React</span>?</h1>
+  </header>
+
+  <main>
+    <!-- Introduction Section -->
+    <section class="intro">
+      <p>
+        React is a JavaScript library for building user interfaces, created by Facebook (now Meta).
+        Its core idea is <strong>Component-based Development</strong> – breaking down a large, messy HTML file into small, reusable components.
+      </p>
+      <hr />
+    </section>
+
+    <!-- Reasons to Use React -->
+    <section class="reasons">
+      <h2>Why use React?</h2>
+      <p>
+        "Why use React? HTML, CSS, and JavaScript are just fine!" 
+        Here’s why React is worth considering:
+      </p>
+      <ul>
+        <li><strong>Declarative:</strong> React makes building UIs easier by efficiently updating the DOM based on data changes.</li>
+        <li><strong>Component-Based:</strong> Create small, reusable components that manage their own state.</li>
+        <li><strong>Learn Once, Write Anywhere:</strong> Integrates with any tech stack without needing to rewrite everything.</li>
+        <li><strong>React Hooks:</strong> Built-in functions that simplify state management and side effects in functional components.</li>
+      </ul>
+    </section>
+
+    <!-- Code Comparison Section -->
+    <section class="code-comparison">
+      <h2>React Code vs. Regular HTML/JS</h2>
+      <p>
+        Compare a simple button counter implemented in React with one written in regular HTML, CSS, and JavaScript.
+      </p>
+      <div class="code-container">
+        <h3>React Code</h3>
+        <pre id="react-code"></pre>
+      </div>
+      <div class="code-container">
+        <h3>Regular HTML/JavaScript</h3>
+        <pre id="html-code"></pre>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz">
+      <h2>Quiz: How much do you know about React?</h2>
+      <form method="post">
+        <label for="name">Enter your Name</label>
+        <input type="text" name="name" id="name" placeholder="enter your name here..." />
+
+        <label for="email">Enter your Email so we can send you the results :)</label>
+        <input type="email" name="email" id="email" placeholder="something@something.com" />
+
+        <fieldset>
+          <legend>What is React?</legend>
+          <div class="radio-group">
+            <input type="radio" name="question1" id="q1-option1" value="framework" />
+            <label for="q1-option1">JavaScript Framework</label>
+
+            <input type="radio" name="question1" id="q1-option2" value="library" />
+            <label for="q1-option2">JavaScript Library</label>
+
+            <input type="radio" name="question1" id="q1-option3" value="language" />
+            <label for="q1-option3">JavaScript Language</label>
           </div>
+        </fieldset>
 
-        <p>
-            React is a JavaScript library for building user interfaces. Created by Facebook (now Meta). 
-            The whole idea behind it is <strong>Component-based Development</strong>, which means instead of coding 
-            one giant, messy HTML file (like this one ), you break everything into reusable components.
-        </p>
-            <hr>
-        <ol>
-            <h3>
-                "Why use React? HTML, CSS, and JavaScript are just fine!"  
-                Well, here’s why React is worth considering:
-            </h3>
-            <hr>
-            <li><strong>Declarative:</strong> React makes building UIs easier. It updates the DOM efficiently based on data changes.</li>
-            <li><strong>Component-Based:</strong> You build small, reusable components that handle their own state.</li>
-            <li><strong>Learn Once, Write Anywhere:</strong> Works with any tech stack, so you don’t need to rewrite everything.</li>
-            <li><strong>React Hooks:</strong> Built-in functions that make handling state and effects inside functional components a breeze.</li>
-        </ol>
+        <fieldset>
+          <legend>What is the main idea behind React?</legend>
+          <div class="radio-group">
+            <input type="radio" name="question2" id="q2-option1" value="component-based" />
+            <label for="q2-option1">Component-based Development</label>
 
-        </h2>React Code vs. Regular HTML/JS</h2>
-        <p>Let’s compare a simple button counter implemented in React and regular HTML,CSS and JavaScript.</p>
+            <input type="radio" name="question2" id="q2-option2" value="oop" />
+            <label for="q2-option2">Object-oriented Programming</label>
 
-        <div class="code-container">
-            <h3>React Code</h3>
-            <pre id="react-code"></pre> 
-        </div>
-        
-        <div class="code-container">
-            <h3>Regular HTML/JavaScript</h3>
-            <pre id="html-code"></pre> 
-        </div>
-    </main>
-    <div>
-        <h3>
-            Quiz: How much do you know about React?
-        </h3>
-    </div>
-    <div class="quiz-container">
-        <h3>Quiz: How much do you know about React?</h3>
-    
-        <form method="post">
-            <label for="name">Enter your Name</label>
-            <input type="text" name="name" id="name" placeholder="enter your name here...">
-    
-            <label for="email">Enter your Email so we can send you the results :)</label>
-            <input type="email" name="email" id="email" placeholder="something@something.com">
-    
-            <label for="question1">What is React?</label>
-            <div class="radio-group">
-                <input type="radio" name="question1" id="q1-option1" value="framework">
-                <label for="q1-option1">JavaScript Framework</label>
-    
-                <input type="radio" name="question1" id="q1-option2" value="library">
-                <label for="q1-option2">JavaScript Library</label>
-    
-                <input type="radio" name="question1" id="q1-option3" value="language">
-                <label for="q1-option3">JavaScript Language</label>
-            </div>
-    
-            <label for="question2">What is the main idea behind React?</label>
-            <div class="radio-group">
-                <input type="radio" name="question2" id="q2-option1" value="component-based">
-                <label for="q2-option1">Component-based Development</label>
-    
-                <input type="radio" name="question2" id="q2-option2" value="oop">
-                <label for="q2-option2">Object-oriented Programming</label>
-    
-                <input type="radio" name="question2" id="q2-option3" value="fp">
-                <label for="q2-option3">Functional Programming</label>
-            </div>
-    
-            <label for="question3">What are React Hooks?</label>
-            <div class="radio-group">
-                <input type="radio" name="question3" id="q3-option1" value="hooks">
-                <label for="q3-option1">Built-in functions that make handling state and effects inside functional components a breeze.</label>
-    
-                <input type="radio" name="question3" id="q3-option2" value="coat">
-                <label for="q3-option2">A way to hang your coat</label>
-    
-                <input type="radio" name="question3" id="q3-option3" value="fish">
-                <label for="q3-option3">A way to catch fish</label>
-            </div>
-    
-            <label for="question4">What is the main advantage of React?</label>
-            <div class="radio-group">
-                <input type="radio" name="question4" id="q4-option1" value="declarative">
-                <label for="q4-option1">Declarative</label>
-    
-                <input type="radio" name="question4" id="q4-option2" value="imperative">
-                <label for="q4-option2">Imperative</label>
-    
-                <input type="radio" name="question4" id="q4-option3" value="functional">
-                <label for="q4-option3">Functional</label>
-    
-                <input type="radio" name="question4" id="q4-option4" value="all">
-                <label for="q4-option4">All of the above</label>
-            </div>
-    
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    <div class="companies-container">
-        <h3>Companies that use React</h3>
-        <ol class="companies-list">
-            <li data-url="https://facebook.com">
-                <img src="assets/facebook.svg" alt="Facebook Logo" height="200" width="200">
-                <span>Facebook</span>
-            </li>
-            <li data-url="https://instagram.com">
-                <img src="assets/instagram.svg" alt="Instagram Logo" height="200" width="200">
-                <span>Instagram</span>
-            </li>
-            <li data-url="https://netflix.com">
-                <img src="assets/netflix.svg" alt="Netflix Logo" height="200" width="200">
-                <span>Netflix</span>
-            </li>
-            <li data-url="https://whatsapp.com">
-                <img src="assets/whatsapp.svg" alt="WhatsApp Logo" height="200" width="200">
-                <span>WhatsApp</span>
-            </li>
-            <li data-url="https://twitter.com">
-                <img src="assets/twitter.svg" alt="Twitter Logo" height="200" width="200">
-                <span>Twitter</span>
-            </li>
-            <li data-url="https://reddit.com">
-                <img src="assets/reddit.svg" alt="Reddit Logo" height="200" width="200">
-                <span>Reddit</span>
-            </li>
-            <li data-url="https://slack.com">
-                <img src="assets/slack.svg" alt="Slack Logo" height="200" width="200">
-                <span>Slack</span>
-            </li>
-            <li data-url="https://spotify.com">
-                <img src="assets/spotify.svg" alt="Spotify Logo" height="200" width="200">
-                <span>Spotify</span>
-            </li>
-            <li data-url="https://uber.com">
-                <img src="assets/uber.svg" alt="Uber Logo" height="200" width="200">
-                <span>Uber</span>
-            </li>
-            <li data-url="https://lyft.com">
-                <img src="assets/lyft.svg" alt="Lyft Logo "height="200" width="200">
-                <span>Lyft</span>
-            </li>
-        </ol>
-    </div>
-    <div>
-        <h3>
-            Learn More about the React Frameworks <a href="ReactFrameworks.html">Here</a>
-        </h3>
-    </div>
-    <footer>
-        <p>&copy; 2025 All Rights Reserved</p>
-    </footer>
+            <input type="radio" name="question2" id="q2-option3" value="fp" />
+            <label for="q2-option3">Functional Programming</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>What are React Hooks?</legend>
+          <div class="radio-group">
+            <input type="radio" name="question3" id="q3-option1" value="hooks" />
+            <label for="q3-option1">
+              Built-in functions that simplify state and effect management in functional components.
+            </label>
+
+            <input type="radio" name="question3" id="q3-option2" value="coat" />
+            <label for="q3-option2">A way to hang your coat</label>
+
+            <input type="radio" name="question3" id="q3-option3" value="fish" />
+            <label for="q3-option3">A way to catch fish</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>What is the main advantage of React?</legend>
+          <div class="radio-group">
+            <input type="radio" name="question4" id="q4-option1" value="declarative" />
+            <label for="q4-option1">Declarative</label>
+
+            <input type="radio" name="question4" id="q4-option2" value="imperative" />
+            <label for="q4-option2">Imperative</label>
+
+            <input type="radio" name="question4" id="q4-option3" value="functional" />
+            <label for="q4-option3">Functional</label>
+
+            <input type="radio" name="question4" id="q4-option4" value="all" />
+            <label for="q4-option4">All of the above</label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Companies Section -->
+    <section class="companies">
+      <h2>Companies that use React</h2>
+      <ul class="companies-list">
+        <li data-url="https://facebook.com">
+          <img src="assets/facebook.svg" alt="Facebook Logo" height="200" width="200" />
+          <span>Facebook</span>
+        </li>
+        <li data-url="https://instagram.com">
+          <img src="assets/instagram.svg" alt="Instagram Logo" height="200" width="200" />
+          <span>Instagram</span>
+        </li>
+        <li data-url="https://netflix.com">
+          <img src="assets/netflix.svg" alt="Netflix Logo" height="200" width="200" />
+          <span>Netflix</span>
+        </li>
+        <li data-url="https://whatsapp.com">
+          <img src="assets/whatsapp.svg" alt="WhatsApp Logo" height="200" width="200" />
+          <span>WhatsApp</span>
+        </li>
+        <li data-url="https://twitter.com">
+          <img src="assets/twitter.svg" alt="Twitter Logo" height="200" width="200" />
+          <span>Twitter</span>
+        </li>
+        <li data-url="https://reddit.com">
+          <img src="assets/reddit.svg" alt="Reddit Logo" height="200" width="200" />
+          <span>Reddit</span>
+        </li>
+        <li data-url="https://slack.com">
+          <img src="assets/slack.svg" alt="Slack Logo" height="200" width="200" />
+          <span>Slack</span>
+        </li>
+        <li data-url="https://spotify.com">
+          <img src="assets/spotify.svg" alt="Spotify Logo" height="200" width="200" />
+          <span>Spotify</span>
+        </li>
+        <li data-url="https://uber.com">
+          <img src="assets/uber.svg" alt="Uber Logo" height="200" width="200" />
+          <span>Uber</span>
+        </li>
+        <li data-url="https://lyft.com">
+          <img src="assets/lyft.svg" alt="Lyft Logo" height="200" width="200" />
+          <span>Lyft</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Learn More Section -->
+    <section class="learn-more">
+      <h2>Learn More about React Frameworks</h2>
+      <p><a href="ReactFrameworks.html">Click here</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 All Rights Reserved</p>
+  </footer>
 </body>
 </html>
