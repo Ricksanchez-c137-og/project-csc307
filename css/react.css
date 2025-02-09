@@ -204,3 +204,35 @@ footer {
     text-transform: uppercase;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* Video Section Styles */
+.video {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .video h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 1280px;
+    max-width: 720; 
+    margin: 0 auto;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  

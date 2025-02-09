@@ -8,7 +8,7 @@
   <script defer src="scripts/react.js"></script>
 </head>
 <body>
-  <!-- Header with mirror-swipe effect on React word (controlled via CSS) -->
+  <!-- Header with mirror-swipe effect on "React" -->
   <header id="react-header">
     <h1>What is <span class="mirror-swipe">React</span>?</h1>
   </header>
@@ -132,7 +132,7 @@
     <!-- Companies Section -->
     <section class="companies">
       <h2>Companies that use React</h2>
-      <ol class="companies-list">
+      <ul class="companies-list">
         <li data-url="https://facebook.com">
           <img src="assets/facebook.svg" alt="Facebook Logo" height="200" width="200" />
           <span>Facebook</span>
@@ -173,7 +173,20 @@
           <img src="assets/lyft.svg" alt="Lyft Logo" height="200" width="200" />
           <span>Lyft</span>
         </li>
-      </ol>
+      </ul>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video">
+      <h2>Watch This React Video</h2>
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/Tn6-PIqc4UM" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
     </section>
 
     <!-- Learn More Section -->
