@@ -69,3 +69,17 @@ tbody tr:hover {
     }
 }
 
+#react {
+    animation: rotate 5s linear infinite;
+    height: auto;
+    width: auto;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
