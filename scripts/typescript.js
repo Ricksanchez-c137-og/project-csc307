@@ -73,29 +73,5 @@ do {
         console.error("Element with ID 'javascript-code' not found.");
     }
 
-    const elements = document.querySelectorAll("p, ol, .code-container");
 
-    elements.forEach((element, index) => {
-        element.style.opacity = "0";
-        element.style.transform = "translateY(30px)";
-        element.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
-
-        setTimeout(() => {
-            element.style.opacity = "1";
-            element.style.transform = "translateY(0)";
-        }, 200 * index); 
-
-    let count = 0;
-    const animatedElements = document.querySelectorAll(".code-container");
-    
-    for (let i = 0; i < animatedElements.length; i++) {
-        setTimeout(() => {
-            animatedElements[i].style.transform = "scale(1.05)";
-            animatedElements[i].style.transition = "transform 0.3s ease-in-out";
-        }, 600 + i * 300);
-
-        setTimeout(() => {
-            animatedElements[i].style.transform = "scale(1)";
-        }, 1200 + i * 300);
-    }
-})});
+});

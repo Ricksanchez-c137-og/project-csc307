@@ -39,17 +39,6 @@ document.body.innerHTML = '<p id="count-display">You clicked 0 times</p><button 
     addCopyButton(jsCodeEl);
   }
 
-  // Fade in animated elements with a slight stagger effect
-  const animatedElements = document.querySelectorAll('.animate-on-load');
-  animatedElements.forEach((el, index) => {
-    el.style.opacity = '0';
-    el.style.transition = 'opacity 0.6s ease-out';
-    setTimeout(() => {
-      el.style.opacity = '1';
-    }, index * 200);
-  });
-});
-
 function addCopyButton(codeEl) {
   const btn = document.createElement('button');
   btn.className = 'copy-button';
@@ -64,3 +53,4 @@ function addCopyButton(codeEl) {
   });
   codeEl.parentNode.insertBefore(btn, codeEl);
 }
+});
